@@ -1,0 +1,467 @@
+:root {
+    /*======= COLORS ========*/
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+
+    /*======= FONT FAMILY ========*/
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+
+    /*======= FONT SIZE & WEIGHT ========*/
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Raleway, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--bs-gray-800);
+    font-weight: bold;
+    font-family: Raleway, sans-serif;
+    font-size: 15px;
+}
+
+.nav-active-link {
+    color: var(--bs-blue);
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 12px;
+}
+
+nav ul {
+    margin-left: 130px;
+}
+
+nav ul li a {
+    font-weight: 100;
+}
+
+nav ul .btn-outline-primary:hover a {
+    color: white;
+    font-weight: 100;
+}
+
+.nav-logo {
+    cursor: pointer;
+}
+
+.home {
+    margin-top: 60px;
+}
+
+.home .row .sec {
+    text-align: end;
+    padding-right: 40px;
+}
+
+.home .row .sec h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.home .row .sec p {
+    padding: 10px 0;
+    font-size: 19px;
+    color: #858ea1;
+}
+
+.home .row .sec a {
+    text-decoration: none;
+    background: #0dcaf0;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 4px;
+    box-shadow: 0px 8px 28px #01b8bc;
+    margin-top: 20px;
+    display: inline-block;
+    transition: .3s;
+}
+
+.home .row .sec a:hover {
+    background: #0d6efd;
+}
+
+
+.home .row .home-img {
+    animation-name: home-img;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes home-img {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/*============ who we are ===============*/
+.whoWeAre .row .col-md-6 .who-border {
+    margin: 50px 0;
+    padding: 20px;
+    transition: .3s;
+    border-radius: 16px;
+}
+
+.whoWeAre .row .col-md-6 i {
+    color: #01b8bc;
+    font-size: 35px;
+}
+
+.whoWeAre .row .col-md-6 h4 {
+    padding: 17px 0;
+    font-weight: 900;
+    color: #495057;
+}
+
+.whoWeAre .row .col-md-6 p {
+    font-size: 12px;
+    color: #858ea1;
+}
+
+.whoWeAre .row .col-md-6 .who-border:hover {
+    border: 1px solid #8d8e90;
+    cursor: pointer;
+}
+
+.who-h4 {
+    font-size: 35px;
+    color: #858ea1;
+}
+
+.letter-spacing {
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+/*================ services =================*/
+.border-box {
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.services-header {
+    text-align: center;
+    position: relative;
+    margin-top: 200px;
+}
+
+.services-header span {
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    left: 0;
+    right: 0;
+    /* z-index: 0; */
+    opacity: .1;
+    top: -30px;
+}
+
+.services-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #5f687b;
+    position: relative;
+    z-index: 2;
+}
+
+.services .row .col-md-3 {
+    text-align: center;
+    padding: 6px;
+    margin-bottom: 30px;
+}
+
+.services .row .col-md-3 a {
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    color: #6c757d;
+    transition: .4s;
+}
+
+.services .row .col-md-3 .border-box:hover {
+    border: 1px solid #ced4da;
+}
+
+.services .row .col-md-3 .border-box:hover a {
+    color: #01b8bc;
+}
+
+.services .row .col-md-3 i {
+    font-size: 30px;
+    color: #01b8bc;
+}
+
+
+/*============ contact us ===============*/
+.col-md-7 {
+    border-top: 2px solid #0dcaf0;
+    padding: 20px;
+    border-bottom: 4px solid #0dcaf0;
+}
+
+.col-md-7 {
+    font-size: 13px;
+}
+
+.col-md-7 .row .col-md-6 input,
+.col-md-12 input,
+.col-md-12 textarea {
+    width: 100%;
+    padding: 7px 15px;
+    border: 1px solid #dee2e6;
+    outline: none;
+    border-radius: 6px;
+}
+
+.col-md-7 .row .col-md-6 input:focus,
+.col-md-12 input:focus,
+.col-md-12 textarea:focus {
+    border: 1px solid #0dcaf0;
+}
+
+.col-md-7 .row .col-md-6,
+.col-md-12 {
+    text-align: end;
+}
+
+.contact .col-md-12 .btn {
+    background: #01b8bc !important;
+    border: none;
+    padding: 10px 18px;
+}
+
+.contact .col-md-12 .btn:hover {
+    background: #0dcaf0 !important;
+}
+
+.contact .row .col-md-4 {
+    padding: 20px 0 60px 0;
+    border-top: 2px solid #0dcaf0;
+    /* margin-left: 1px; */
+    border-bottom: 4px solid #0dcaf0;
+}
+
+.col-md-4 .col-md-12 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-md-4 .col-md-12 .contact-i {
+    color: #0dcaf0;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.col-md-4 .col-md-12 .contact-i:hover {
+    color: #fff;
+    background: #0dcaf0;
+}
+
+.col-md-4 .col-md-12 .contact-info {
+    font-size: 15px;
+}
+
+.col-md-4 .col-md-12 .contact-info p {
+    color: #adb5bd;
+    font-size: 12px;
+}
+
+.col-md-4 .col-md-12 .contact-info h3 {
+    font-weight: 600;
+    font-size: 22px;
+    color: #6c757d;
+}
+
+footer {
+    background: #f1f1f1;
+}
+
+.footer-center {
+    padding: 80px 0 40px;
+}
+
+footer li {
+    display: inline-block;
+    margin: 0 15px;
+    margin-top: 30px;
+}
+
+footer li i {
+    background: #ced4da;
+    padding: 10px;
+    border-radius: 7px;
+    color: #495057;
+    transition: .3s;
+}
+
+footer li i:hover {
+    background: #01b8bc;
+    color: #fff;
+}
+
+.footer-center h1 {
+    font-weight: bold;
+    font-size: 42px;
+    color: #5f687b;
+}
+
+.hr {
+    height: 1px;
+    width: 100%;
+    background: #c5c4c4;
+}
+
+.designer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+footer span {
+    color: #20c997;
+}
+
+.scrollup {
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    background: #01b8bc;
+    transition: .3s;
+    color: #fff;
+    z-index: var(--z-tool);
+    padding: 0 .3rem;
+    opacity: 0.8;
+    border-radius: .4rem;
+    font-size: 30px;
+}
+
+nav .fa-sliders {
+    color: #5f687b;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: .5s;
+    position: relative;
+    top: 20px;
+    left: -90px;
+}
+
+@media (max-width: 991px) {
+    .scrollup {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav .fa-sliders {
+        display: block;
+    }
+
+    .nav-logo {
+        margin-left: 40px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    nav .fa-sliders {
+        top: 20px;
+        left: -50px;
+    }
+}
